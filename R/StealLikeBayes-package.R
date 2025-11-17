@@ -22,17 +22,19 @@
 #'
 #' @description This is a compendium of C++ routines useful for Bayesian 
 #' statistics. We steal other people's C++ code, repurpose it, and export it so 
-#' developers of R packages can easily use it in their C++ code. We actually 
-#' don't steal anything, but copy code that is compatible with our GPL 3 
-#' licence, fully acknowledging the authorship of the original code.
+#' developers of R packages can use it in their C++ code. We actually don't 
+#' steal anything, or claim that Thomas Bayes did, but copy code that is 
+#' compatible with our GPL 3 licence, fully acknowledging the authorship of the 
+#' original code.
 #' 
 #' @note This is a collaborative project. You are welcome to contribute. Please,
-#' read the documentation and get to work of stealing like Bayes!
+#' read the documentation at \url{https://bsvars.org/StealLikeBayes/dev/} and 
+#' StealLikeBayes!
 #' 
 #' @name StealLikeBayes-package
 #' @aliases StealLikeBayes-package StealLikeBayes
 #' @docType package
 #' @importFrom Rcpp sourceCpp
 #' @useDynLib StealLikeBayes, .registration = TRUE
-#' @keywords internal
+#' @keywords internal Bayesian
 '_PACKAGE'

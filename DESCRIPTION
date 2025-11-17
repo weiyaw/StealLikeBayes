@@ -3,6 +3,7 @@ Type: Package
 Title: A C++ compendium of Bayesian statistical routines for R packages
 Version: 0.1.0.9000
 Date: 2025-11-06
+Maintainer: Tomasz Woźniak <wozniak.tom@pm.me>
 Authors@R: c(
     person(
       "Tomasz", 
@@ -15,20 +16,20 @@ Authors@R: c(
       )
     )
   )
-Maintainer: Tomasz Woźniak <wozniak.tom@pm.me>
 Description: 
   This is a compendium of C++ routines useful for Bayesian statistics. We steal 
   other people's C++ code, repurpose it, and export it so developers of R 
-  packages can easily use it in their C++ code. We actually don't steal 
-  anything, but copy code that is compatible with our GPL 3 licence, fully 
-  acknowledging the authorship of the original code.
-License: GPL (>= 3)
+  packages can use it in their C++ code. We actually don't steal anything, or 
+  claim that Thomas Bayes did, but copy code that is compatible with our GPL 3 
+  licence, fully acknowledging the authorship of the original code.
 Imports: 
   Rcpp (>= 1.1.0)
 LinkingTo: 
   Rcpp, 
   RcppArmadillo
+Suggests: 
+  tinytest
+URL: http://bsvars.org/StealLikeBayes/
+License: GPL (>= 3)
 Encoding: UTF-8
 RoxygenNote: 7.3.3
-Suggests: tinytest
-URL: http://bsvars.org/StealLikeBayes/
