@@ -14,6 +14,29 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
+
+// qr_sign_cpp
+arma::mat qr_sign_cpp(const arma::mat& A);
+RcppExport SEXP _StealLikeBayes_qr_sign_cpp(SEXP ASEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const arma::mat& >::type A(ASEXP);
+    rcpp_result_gen = Rcpp::wrap(qr_sign_cpp(A));
+    return rcpp_result_gen;
+END_RCPP
+}
+// rhaar1
+arma::mat rhaar1(const int& n);
+RcppExport SEXP _StealLikeBayes_rhaar1(SEXP nSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const int& >::type n(nSEXP);
+    rcpp_result_gen = Rcpp::wrap(rhaar1(n));
+    return rcpp_result_gen;
+END_RCPP
+=======
 // orthogonal_complement_matrix_TW
 arma::mat orthogonal_complement_matrix_TW(const arma::mat& x);
 static SEXP _StealLikeBayes_orthogonal_complement_matrix_TW_try(SEXP xSEXP) {
@@ -334,6 +357,8 @@ RcppExport SEXP _StealLikeBayes_RcppExport_registerCCallable() {
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_StealLikeBayes_qr_sign_cpp", (DL_FUNC) &_StealLikeBayes_qr_sign_cpp, 1},
+    {"_StealLikeBayes_rhaar1", (DL_FUNC) &_StealLikeBayes_rhaar1, 1},
     {"_StealLikeBayes_orthogonal_complement_matrix_TW", (DL_FUNC) &_StealLikeBayes_orthogonal_complement_matrix_TW, 1},
     {"_StealLikeBayes_normalisation_wz2003_s", (DL_FUNC) &_StealLikeBayes_normalisation_wz2003_s, 4},
     {"_StealLikeBayes_normalisation_wz2003", (DL_FUNC) &_StealLikeBayes_normalisation_wz2003, 2},
