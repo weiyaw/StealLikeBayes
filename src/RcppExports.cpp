@@ -25,14 +25,14 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// rhaar_cpp
-arma::mat rhaar_cpp(const int& n);
-RcppExport SEXP _StealLikeBayes_rhaar_cpp(SEXP nSEXP) {
+// rhaar1
+arma::mat rhaar1(const int& n);
+RcppExport SEXP _StealLikeBayes_rhaar1(SEXP nSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< const int& >::type n(nSEXP);
-    rcpp_result_gen = Rcpp::wrap(rhaar_cpp(n));
+    rcpp_result_gen = Rcpp::wrap(rhaar1(n));
     return rcpp_result_gen;
 END_RCPP
 }
@@ -204,7 +204,7 @@ RcppExport SEXP _StealLikeBayes_RcppExport_registerCCallable() {
 
 static const R_CallMethodDef CallEntries[] = {
     {"_StealLikeBayes_qr_sign_cpp", (DL_FUNC) &_StealLikeBayes_qr_sign_cpp, 1},
-    {"_StealLikeBayes_rhaar_cpp", (DL_FUNC) &_StealLikeBayes_rhaar_cpp, 1},
+    {"_StealLikeBayes_rhaar1", (DL_FUNC) &_StealLikeBayes_rhaar1, 1},
     {"_StealLikeBayes_cholesky_tridiagonal", (DL_FUNC) &_StealLikeBayes_cholesky_tridiagonal, 2},
     {"_StealLikeBayes_forward_algorithm", (DL_FUNC) &_StealLikeBayes_forward_algorithm, 3},
     {"_StealLikeBayes_backward_algorithm", (DL_FUNC) &_StealLikeBayes_backward_algorithm, 3},

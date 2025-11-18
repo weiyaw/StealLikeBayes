@@ -28,6 +28,11 @@ Useful links:
 \author{
 \strong{Maintainer}: Tomasz Woźniak \email{wozniak.tom@pm.me} (\href{https://orcid.org/0000-0003-2212-2378}{ORCID}) (contributions: rnorm1_precision_sampler)
 
+Authors:
+\itemize{
+  \item Xiaolei Wang \email{adamwang15@gmail.com} (\href{https://orcid.org/0009-0005-6192-9061}{ORCID}) (contributions: rhaar1)
+}
+
 }
 \keyword{Bayesian}
 \keyword{internal}

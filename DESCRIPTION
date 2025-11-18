@@ -14,6 +14,16 @@ Authors@R: c(
         ORCID = "0000-0003-2212-2378", 
         contributions = "contributions: rnorm1_precision_sampler"
       )
+    ),
+    person(
+      "Xiaolei", 
+      "Wang",, 
+      "adamwang15@gmail.com", 
+      role = c("aut"),
+      comment = c(
+        ORCID = "0009-0005-6192-9061", 
+        contributions = "contributions: rhaar1"
+      )
     )
   )
 Description: 

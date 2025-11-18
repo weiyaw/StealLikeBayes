@@ -1,10 +1,10 @@
 n <- 3
 
 set.seed(1)
-A <- rhaar(n)
+A <- rhaar1(n)
 
 set.seed(1)
-B <- rhaar(n)
+B <- rhaar1(n)
 
 expect_identical(
   A,

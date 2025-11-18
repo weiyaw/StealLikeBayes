@@ -21,7 +21,6 @@ arma::mat qr_sign_cpp(const arma::mat &A)
   {
     if (R(i, i) < 0)
     {
-      // R.row(i) *= -1;  // Change sign of the column
       Q.col(i) *= -1; // Change sign of the corresponding row in Q
     }
   }
@@ -35,7 +34,7 @@ arma::mat qr_sign_cpp(const arma::mat &A)
 // Sample uniformly from the space of nxn orthogonal matrices
 // [[Rcpp:interface(cpp)]]
 // [[Rcpp::export]]
-arma::mat rhaar_cpp(const int &n)
+arma::mat rhaar1(const int &n)
 {
   return qr_sign_cpp(arma::mat(n, n, fill::randn));
 }

@@ -5,8 +5,8 @@ qr_sign_cpp <- function(A) {
     .Call(`_StealLikeBayes_qr_sign_cpp`, A)
 }
 
-rhaar_cpp <- function(n) {
-    .Call(`_StealLikeBayes_rhaar_cpp`, n)
+rhaar1 <- function(n) {
+    .Call(`_StealLikeBayes_rhaar1`, n)
 }
 
 # Register entry points for exported C++ functions
