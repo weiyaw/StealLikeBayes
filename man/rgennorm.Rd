@@ -37,13 +37,13 @@ for a restricted \eqn{N\times N} full rank matrix \eqn{X}. The matrix is drawn
 row-by-row from their full conditional distributions using the Gibbs sampler
 by Waggoner & Zha (2003a). The density is proportional to
 \deqn{det(X)^{\nu - N}\exp(-\frac{1}{2}\sum_{n=1}^{N}x_nV_nS_nV_n'x_n')}
-specified by the \eqn{N\times N} scale matrices \eqn{S+n}, a positive 
+specified by the \eqn{N\times N} scale matrices \eqn{S_n}, a positive 
 scalar-valued shape parameter \eqn{\nu}, and \eqn{r_n\times N} selection 
 matrices \eqn{V_n} defining the restrictions. Zero restrictions may be 
 imposed on th \eqn{X} matrix row-by-row as
 \deqn{X_{n.} = x_nV_n}
 where \eqn{1\times r_n} vectors \eqn{x_n} collect the unrestricted elements 
-of \eqn{X} and the matrices \eqn{V_n} place them in appropriate spots of the 
+of \eqn{X_{n.}} and the matrices \eqn{V_n} place them in appropriate spots of the 
 \eqn{1\times N} row \eqn{X_{n.}}. The output may be normalised using the 
 method by Waggoner & Zha (2003b) ensuring positive diagonal elements of the 
 output matrices.
