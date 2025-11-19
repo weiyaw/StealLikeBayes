@@ -49,7 +49,7 @@ by Gruber & Kastner (2024) and is using objects and commands from the \pkg{armad
 Thanks to the \pkg{RcppArmadillo} package by Eddelbuettel, Francois, Bates, Ni, & Sanderson (2025).
 }
 \examples{
-result <- sample_variances_horseshoe( rep(0, 2), rep(0, 2), 1, rep(1, 2), 1)
+sample_variances_horseshoe( rep(0, 2), rep(0, 2), 1, rep(1, 2), 1)
 
 }
 \references{
