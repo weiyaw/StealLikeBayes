@@ -72,7 +72,8 @@ LinkingTo:
   shrinkTVP
 Suggests: 
   tinytest
-URL: http://bsvars.org/StealLikeBayes/
+URL: https://bsvars.org/StealLikeBayes/
+BugReports: https://github.com/bsvars/StealLikeBayes/issues
 License: GPL (>= 3)
 Encoding: UTF-8
 RoxygenNote: 7.3.3

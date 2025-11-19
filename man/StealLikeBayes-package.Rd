@@ -21,7 +21,8 @@ StealLikeBayes!
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://bsvars.org/StealLikeBayes/}
+  \item \url{https://bsvars.org/StealLikeBayes/}
+  \item Report bugs at \url{https://github.com/bsvars/StealLikeBayes/issues}
 }
 
 }

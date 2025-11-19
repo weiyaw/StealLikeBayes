@@ -12,9 +12,6 @@ name: pkgdown.yaml
 
 permissions: read-all
 
-template:
-  math-rendering: mathjax
-
 jobs:
   pkgdown:
     runs-on: ubuntu-latest
