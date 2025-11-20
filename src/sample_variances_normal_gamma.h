@@ -4,7 +4,6 @@
 
 #include <RcppArmadillo.h>
 
-double do_rgig(double lambda, double chi, double psi);
   
   
 arma::vec sample_variances_normal_gamma(
